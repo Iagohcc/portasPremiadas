@@ -1,0 +1,61 @@
+.area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: var(--area-porta-largura);
+    height: var(--area-porta-altura);
+    align-items: center;
+    margin: 5px;
+}
+
+.estrutura {
+    display: flex;
+    flex-grow: 1;
+    border-top: 5px solid chocolate;
+    border-left: 5px solid chocolate;
+    border-right: 5px solid chocolate;
+    width: 90%;
+}
+
+.porta {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #863b0c;
+}
+
+.numero_porta {
+    font-size: 3rem;
+}
+
+.chao {
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+}
+
+.macaneta {
+    position: absolute;
+    top: calc(0.45 * var(--area-porta-altura));
+    align-self: flex-start;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #502205;
+}
+
+.selecionada {
+    border-top: 5px solid #ffff00;
+    border-left: 5px solid #ffff00;
+    border-right: 5px solid #ffff00;
+}
+
+.selecionada .numero_porta{
+    color: #ffff00;
+}
+
+.selecionada .macaneta {
+    background-color: #ffff00;
+}
